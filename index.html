@@ -18,10 +18,10 @@
     text-decoration: none;
 }
 body{
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-image: url(./images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
 }
 .inicio{
     background-image: url(../imagenes/fondo.jpg);
@@ -32,6 +32,8 @@ body{
 .container_inicio{
     display: flex;
     justify-content: center;
+    background-color: rgba(1,1,1,.6);
+    min-height: 100vh;
 }
 .containerOpciones{
     max-width: 800px;
@@ -78,7 +80,7 @@ body{
             <h1 class="h1 text-center text-white mb-5">Administración Tramo</h1>
             <a href="./conductores.html" target="_blank">
                 <div class="card text-center inicio_opciones" style="width:15rem;">
-                    <img src="./icons/conductor.jpg" class="card-img-top" alt="...">
+                    <img src="./icons/conductor.png" class="card-img-top" alt="...">
                     <div class="">
                         <p class="card-text">Conductores</p>
                     </div>
@@ -86,7 +88,7 @@ body{
             </a>
             <a href="./dashboardUsuarios/flotaVehicula.html" target="_blank">
                 <div class="card text-center inicio_opciones" style="width:15rem;">
-                    <img src="./icons/camion.jpg" class="card-img-top" alt="...">
+                    <img src="./icons/camion.png" class="card-img-top" alt="...">
                     <div class="">
                         <p class="card-text">Vehiculos</p>
                     </div>
@@ -94,7 +96,7 @@ body{
             </a>
             <a href="./dashboardUsuarios/clienteNatural.html" target="_blank">
                 <div class="card text-center inicio_opciones" style="width:15rem;">
-                    <img src="./icons/persona.jpg" class="card-img-top ms-4" alt="...">
+                    <img src="./icons/persona.png" class="card-img-top ms-4" alt="...">
                     <div class="">
                         <p class="card-text">Cliente Natural</p>
                     </div>
@@ -102,7 +104,7 @@ body{
             </a>
             <a href="./dashboardUsuarios/clienteEmpresa.html" target="_blank">
                 <div class="card text-center inicio_opciones" style="width:15rem;">
-                    <img src="./icons/empresa.jpg" class="card-img-top" alt="...">
+                    <img src="./icons/empresa.png" class="card-img-top" alt="...">
                     <div class="">
                         <p class="card-text">Cliente Empresa</p>
                     </div>
