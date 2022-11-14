@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./iconos/camion.png" type="image/x-icon">
+    <title>Tramo S.A.S</title>
+</head>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<!-- Iconos -->
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.inicio{
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: cover;
+    min-height: 600px;
+}
+/* Opciones Inicio */
+.container_inicio{
+    display: flex;
+    justify-content: center;
+}
+.containerOpciones{
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+}
+.containerOpciones a{
+    max-width: 180px;
+    height: 200px;
+    margin: 1em 2em;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio_opciones{
+    padding: .5em 0em;
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     max-width: 180px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 20px;
+}
+.inicio_opciones img{
+    max-width: 100px;
+}
+.containerOpciones a:hover{
+    scale: 1.1;
+    transition: all .3s;
+    text-shadow: 2px 2px 8px #ffa200;
+}
+</style>
+<body>
+    <!-- Opciones -->
+    <div class="container-fluid container_inicio">
+        <div class="row containerOpciones">
+            <h1 class="h1 text-center text-white mb-5">Administración Tramo</h1>
+            <a href="./conductores.html">
+                <div class="card text-center inicio_opciones" style="width:15rem;">
+                    <img src="./icons/conductor.jpg" class="card-img-top" alt="...">
+                    <div class="">
+                        <p class="card-text">Conductores</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./dashboardUsuarios/flotaVehicula.html">
+                <div class="card text-center inicio_opciones" style="width:15rem;">
+                    <img src="./icons/camion.jpg" class="card-img-top" alt="...">
+                    <div class="">
+                        <p class="card-text">Vehiculos</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./dashboardUsuarios/clienteNatural.html">
+                <div class="card text-center inicio_opciones" style="width:15rem;">
+                    <img src="./icons/persona.jpg" class="card-img-top ms-4" alt="...">
+                    <div class="">
+                        <p class="card-text">Cliente Natural</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./dashboardUsuarios/clienteEmpresa.html">
+                <div class="card text-center inicio_opciones" style="width:15rem;">
+                    <img src="./icons/empresa.jpg" class="card-img-top" alt="...">
+                    <div class="">
+                        <p class="card-text">Cliente Empresa</p>
+                    </div>
+                </div>
+            </a>        
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <Script src="./js/bootstrap.min.js"></Script>
+</body>
+
+</html>

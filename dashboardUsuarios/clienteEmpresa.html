@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Cliente Empresa</title>
+
+    <!-- file bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container pt-3">
+        <div class="text-center mb-5">
+          <h2>Registro Cliente Empresa</h2>
+        </div>
+    
+          <form id="frmTramo" class="needs-validation" novalidate autocomplete="off">
+            <div class="row">
+            <div class="col-md-4">
+              <label for="txtIdNit" class="form-label">Nit empresa</label>
+              <input type="text" class="form-control" id="txtIdNit" placeholder="Nit Empresa" required>
+              <div class="invalid-feedback">
+                Ingresa el nit valido
+              </div>
+            </div>
+        
+            <div class="col-md-4">
+              <label for="txtIdClienteTipoIdentificacion" class="form-label">Tipo de identificacion</label>
+              <select class="form-select" id="txtIdClienteTipoIdentificacion" required>
+                <option selected disabled value="">Opciones</option>
+                <option>Cedula de Ciudadania</option>
+                <option>Cedula de extranjeria</option>
+              </select>
+              <div class="invalid-feedback">
+                Selecciona una opcion por favor
+              </div>
+            </div>
+        
+              <div class="col-md-4">
+                <label for="txtIdClienteRazonSocial" class="form-label">Razon social</label>
+                <input type="text" class="form-control" id="txtIdClienteRazonSocial" placeholder="Ingresa la razon Social"
+                  required>
+                <div class="invalid-feedback">
+                  Por favor ingresa la razon Social.
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <label for="txtIdClienteRepresentantelegal" class="form-label">Nombre de la empresa</label>
+                <input type="text" class="form-control" id="txtIdClienteRepresentantelegal" placeholder="Nombre de la empresa"
+                  required>
+                <div class="invalid-feedback">
+                  Ingresa el nombre de la empresa
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <label for="txtIdClienteDireccionEmpresa" class="form-label">Direccion de la empresa</label>
+                <input type="text" class="form-control" id="txtIdClienteDireccionEmpresa" placeholder="Direccion" required>
+                <div class="invalid-feedback">
+                  Ingresa el nombre del representante legal
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <label for="txtClienteTelefono" class="form-label">Numero de telefono</label>
+                <input type="number" class="form-control" id="txtClienteTelefono" placeholder="Telefono" required>
+                <div class="invalid-feedback">
+                  Ingresa un numero de telefono valido
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <label for="txtIdClienteCorreo" class="form-label">Correo electronico </label>
+                <input type="email" class="form-control" id="txtIdClienteCorreo" placeholder="Email" required>
+                <div class="invalid-feedback">
+                  Correo invalido
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <label for="txtIdClienteFotoPerfil" class="form-label">Foto de perfil</label>
+                <input type="file" class="form-control" id="txtIdClienteFotoPerfil" placeholder="Foto de perfil">
+              </div>
+        
+              <div class="col-md-4">
+                <label for="txtIdClientecontraseña" class="form-label">Ingresa la contraseña </label>
+                <input type="password" class="form-control" id="txtIdClientecontraseña" placeholder="Contraseña" required>
+                <div class="invalid-feedback">
+                  Contraseña invalidad
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <label for="txtIdIdusuario" class="form-label">Id del usuario</label>
+                <input type="number" class="form-control" id="txtIdIdusuario" placeholder="Ingresa el id del usuario" required>
+                <div class="invalid-feedback">
+                  Ingresa un id valido
+                </div>
+              </div>
+        
+              <div class="col-12 text-center mt-5">
+              <button class="btn btn-primary" type="button" 
+              onclick="instaTramo.fnsetDatosTramo(txtIdNit.value,txtIdClienteTipoIdentificacion.value,txtIdClienteRazonSocial.value,txtIdClienteRepresentantelegal.value,txtIdClienteDireccionEmpresa.value,txtClienteTelefono.value,txtIdClienteCorreo.value,txtIdClienteFotoPerfil.value,txtIdClientecontraseña.value,txtIdIdusuario.value)">Registrar Datos Cliente Empresa</button>
+            </div>
+          </form>
+      </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
