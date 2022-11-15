@@ -125,6 +125,66 @@ class Tramo {
       get getVehiculo(){
         return this.vehiculo
       }
+      //  =========================================
+      // TABLA CONDUCTOR TRAMO
+      //  =========================================
+
+      conductor = {
+        identificacion: 0,
+        usuario: "",
+        nombre: "",
+        apellido: "",
+        fechanAcimiento: "",
+        nacionalidad: "",
+        contraseña: "",
+        repetirContraseña: "",
+        correoElectronico: "",
+        telefono: 0,
+      };
+    
+      setagregarConductor(
+        identificacion,
+        usuario,
+        nombre,
+        apellido,
+        fechanAcimiento,
+        nacionalidad,
+        contraseña,
+        repetirContraseña,
+        correo,
+        telefono
+      ) {
+        if (
+          (identificacion == 0,
+          usuario == "",
+          nombre == "",
+          apellido == "",
+          fechanAcimiento == "",
+          nacionalidad == "",
+          contraseña == "",
+          repetirContraseña == "",
+          correo == "",
+          telefono == "")
+        ) {
+          alert("llenar completos los datos");
+        } else {
+          this.conductor._identificacion = identificacion;
+          this.conductor._usuario = usuario;
+          this.conductor._nombre = nombre;
+          this.conductor._fechaNacimiento = fechanAcimiento;
+          this.conductor._nacionalidad = nacionalidad;
+          this.conductor._contraseña = contraseña;
+          this.conductor._repetirContraseña = repetirContraseña;
+          this.conductor._correo = correo;
+          this.conductor._telefono = telefono;
+    
+          console.table(this.getConductor);
+        }
+      }
+    
+      get getConductor() {
+        return this.conductor;
+      }
   }
 
   var instaTramo = new Tramo();
