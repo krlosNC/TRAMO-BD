@@ -130,48 +130,29 @@ class Tramo {
       //  =========================================
 
       conductor = {
-        identificacion: 0,
-        usuario: "",
-        nombre: "",
-        apellido: "",
-        fechanAcimiento: "",
-        nacionalidad: "",
-        contraseña: "",
-        repetirContraseña: "",
-        correoElectronico: "",
-        telefono: 0,
+        _identificacion: 0,
+        _usuario: "",
+        _nombre: "",
+        _apellido: "",
+        _fechanAcimiento: "",
+        _nacionalidad: "",
+        _contraseña: "",
+        _repetirContraseña: "",
+        _correoElectronico: "",
+        _telefono: 0,
       };
     
-      setagregarConductor(
-        identificacion,
-        usuario,
-        nombre,
-        apellido,
-        fechanAcimiento,
-        nacionalidad,
-        contraseña,
-        repetirContraseña,
-        correo,
-        telefono
-      ) {
-        if (
-          (identificacion == 0,
-          usuario == "",
-          nombre == "",
-          apellido == "",
-          fechanAcimiento == "",
-          nacionalidad == "",
-          contraseña == "",
-          repetirContraseña == "",
-          correo == "",
-          telefono == "")
-        ) {
+      setagregarConductor(identificacion,usuario,nombre,apellido,fechanAcimiento,nacionalidad,contraseña,repetirContraseña,correo,telefono) {
+
+        if (identificacion == 0,usuario == "",nombre == "",apellido == "",fechanAcimiento == "",nacionalidad == "",contraseña == "",repetirContraseña == "",correo == "",telefono == 0){
+
           alert("llenar completos los datos");
+        
         } else {
           this.conductor._identificacion = identificacion;
           this.conductor._usuario = usuario;
           this.conductor._nombre = nombre;
-          this.conductor._fechaNacimiento = fechanAcimiento;
+          this.conductor._fechanAcimiento = fechanAcimiento;
           this.conductor._nacionalidad = nacionalidad;
           this.conductor._contraseña = contraseña;
           this.conductor._repetirContraseña = repetirContraseña;
@@ -185,6 +166,38 @@ class Tramo {
       get getConductor() {
         return this.conductor;
       }
+
+    //  =========================================
+    // TABLA CONDUCTOR TRAMO
+    //  =========================================
+
+      chat = {
+        _Mensaje: "",
+        _Codigo_Mensaje: "",
+        _Hora_Mensaje: "",
+        _Nit_Empresa: ""
+      };
+
+      agregarChat(_Mensaje, _Codigo_Mensaje, _Hora_Mensaje, _Nit_Empresa) {
+
+        if (_Mensaje == "", _Codigo_Mensaje == "", _Hora_Mensaje == "", _Nit_Empresa == "" ) {
+
+            alert("Ingrese todos los datos")
+        
+          } else {
+
+            this.chat._Mensaje = _Mensaje;
+            this.chat._Codigo_Mensaje = _Codigo_Mensaje;
+            this.chat._Hora_Mensaje = _Hora_Mensaje;
+            this.chat._Nit_Empresa = _Nit_Empresa;
+
+            console.table(this.getChat)
+        }
+    }
+
+    get getChat() {
+        return this.chat
+    }
   }
 
   var instaTramo = new Tramo();

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Ayuda Empresa</title>
+
+    <!-- file bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container pt-3">
+        <div class="text-center mb-5">
+            <h2>Chat Ayuda Empresa</h2>
+        </div>
+
+        <form action="" autocomplete="off" class="needs-validation" novalidate
+            onsubmit="return instmisObjetos.agregarVehiculo(  text_modelo_vh.value, text_marca_vh.value, )">
+            <div class="row">
+
+                <div class="col-md-5">
+                    <label for="number_modelo_vh" class="form-label">Mensaje</label>
+                    <input type="text" class="form-control" id="chatem_codigo_mensaje" required />
+                    <div class="invalid-feedback">
+                        Por favor complete este campo.
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <label for="text_marca_vh" class="form-label">Codigo Mensaje</label>
+                    <input type="number" class="form-control" id="chatem_mensajes_enviados" required />
+                    <div class="invalid-feedback">
+                        Por favor complete este campo.
+                    </div>
+                </div>
+
+            
+                <div class="col-md-5">
+                    <label for="number_modelo_vh" class="form-label">Hora Mensaje</label>
+                    <input type="time" class="form-control" id="chatem_hora_fecha" required />
+                    <div class="invalid-feedback">
+                        Por favor complete este campo.
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <label for="number_modelo_vh" class="form-label">Nit Empresa</label>
+                    <input type="number" class="form-control" id="nit" required />
+                    <div class="invalid-feedback">
+                        Por favor complete este campo.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 text-center mt-5">
+
+                <button class="btn btn-primary" type="button"
+                onclick="instaTramo.agregarChat( chatem_codigo_mensaje.value, chatem_mensajes_enviados.value, chatem_hora_fecha.value, nit.value)">Enviar Datos</button>
+            </div>
+        </form>
+        <div id="tablas"></div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
